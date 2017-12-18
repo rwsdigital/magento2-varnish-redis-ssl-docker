@@ -78,3 +78,17 @@ services:
       - ./mysql_server/mysql.sh:/etc/mysql.sh
     ports:
       - "3306:3306"
+      
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    depends_on:
+      - mysql_server
+    environment:
+     - PMA_ARBITRARY=1
+    ports:
+     - 8090:80
+    links:
+      - mysql_server
+    volumes:
+     - /sessions
