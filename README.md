@@ -10,5 +10,5 @@ docker-compose with magento2 + apache2 (webserver) + varnish (cache) + mysql + p
 	2. DB Backup Script -> ./backups/backup.sh (TEXT TO CHANGE: "rootpassword123")
 	3. MySql Credentials -> ./mysql_server/mysql.sh (SET ALL THE INFORMATIONS ABOUT MAGENTO DATABASE AND MYSQL ROOT PASSWORD)
 	4. Set MySql Root Password in docker-compose File -> ./docker-compose.yml (TEXT TO CHANGE: "rootpassword123")
-3. put your magento2 root in  ./magento2 folder (FOLLOW ALL THE OFFICIAL INSTRUCTIONS TO CONFIGURE MAGENTO2 BEFORE STARTING THE DOCKER ENVIRONMENT)
+3. put your magento2 root in  ./magento2 folder (FOLLOW ALL THE OFFICIAL INSTRUCTIONS TO CONFIGURE MAGENTO2 BEFORE STARTING THE DOCKER ENVIRONMENT) (https://magento.com/tech-resources/download)
 4. docker-compose up
