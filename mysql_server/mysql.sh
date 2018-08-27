@@ -7,9 +7,9 @@ database_root_password=rootpassword123      ## Mention mysql root password.
 
 ## Same password must be passed as argument during image build.
 
-## Database user password will be randomly generated
+## Database user password
 
-database_user_password=`date | md5sum | fold -w 12 | head -n 1`
+database_user_password=userpassword123
 
 ## Database user password will be stored in /var/log/check.log ##
 ## Remove /var/log/check.log after retrieving password .       ##

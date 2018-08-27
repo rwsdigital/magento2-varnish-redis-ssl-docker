@@ -19,6 +19,8 @@ RUN apt-get update \
 
 && sed -i -e"s/^bind\s127.0.0.1/bind 0.0.0.0/" /etc/redis/redis.conf \
 
+&& sed -i -e"s/^daemonize\syes/daemonize no/" /etc/redis/redis.conf \
+
 && chown -R redis:syslog /var/log/redis/ \
 
 ##install supervisor and setup supervisord.conf file
