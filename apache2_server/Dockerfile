@@ -60,6 +60,7 @@ ADD vsftpd.conf /etc/vsftpd.conf
 RUN mkdir /ftp
 
 VOLUME ["/ftp"]
+VOLUME /var/spool/cron/crontabs
 
 Expose 8080
 Expose 20 21
