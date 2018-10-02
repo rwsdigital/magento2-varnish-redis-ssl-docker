@@ -1,6 +1,6 @@
 # magento2-varnish-redis-ssl-docker
 
-docker-compose with magento2 + apache2 (webserver) + varnish (cache) + mysql + phpmyadmin + redis (cache) + nginx (reverse proxy for ssl support) + db backup script (production environment)
+docker-compose with magento2 + apache2 (webserver) + varnish (cache) + mysql + phpmyadmin + redis (cache) + nginx (reverse proxy for ssl support) + db backup script (production environment) + portainer (Simple management UI for Docker)
 
 # how to use
 
