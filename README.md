@@ -18,4 +18,4 @@ docker-compose with magento2 + apache2 (webserver) + varnish (cache) + mysql + p
 # hint
 
 * if you want to purge varnish cache from magento backend, execute this command from apache2 container:
-  * php bin/magento setup:config:set --http-cache-hosts=varnish:6081
+php bin/magento setup:config:set --http-cache-hosts=varnish:6081
