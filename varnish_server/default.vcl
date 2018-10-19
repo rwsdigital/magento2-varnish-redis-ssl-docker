@@ -9,7 +9,7 @@ backend default {
 }
 
 acl purge {
-    "127.0.0.1";
+    "apache2";
 }
 
 sub vcl_recv {

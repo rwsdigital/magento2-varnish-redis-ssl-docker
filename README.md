@@ -14,3 +14,8 @@ docker-compose with magento2 + apache2 (webserver) + varnish (cache) + mysql + p
 	6. Set MySql Root Password in docker-compose File -> ./docker-compose.yml (TEXT TO CHANGE: "rootpassword123")
 3. put your magento2 root in  ./magento2 folder (FOLLOW ALL THE OFFICIAL INSTRUCTIONS TO CONFIGURE MAGENTO2 BEFORE STARTING THE DOCKER ENVIRONMENT) (https://magento.com/tech-resources/download or git clone https://github.com/magento/magento2.git)
 4. docker-compose up
+
+# hint
+
+* if you want to purge varnish cache from magento backend, execute this command from apache2 container:
+  * php bin/magento setup:config:set --http-cache-hosts=varnish:6081
