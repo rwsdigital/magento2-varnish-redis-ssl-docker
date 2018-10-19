@@ -112,6 +112,8 @@ services:
 
   portainer:
     image: portainer/portainer
+    restart: unless-stopped
+    container_name: portainer
     ports:
       - "9000:9000"
     command: -H unix:///var/run/docker.sock
