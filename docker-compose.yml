@@ -38,8 +38,8 @@ services:
       - ./redis_server/supervisord.conf:/etc/supervisor/conf.d/supervisord.conf
     links:
       - apache2_server
-    ports:
-      - "6379:6379"
+    #ports:
+    #  - "6379:6379"
 
   varnish_server:
     build:
@@ -92,8 +92,8 @@ services:
     volumes:
       - ./mysql_server/supervisord.conf:/etc/supervisor/conf.d/supervisord.conf
       - ./mysql_server/mysql.sh:/etc/mysql.sh
-    ports:
-      - "3306:3306"
+    #ports:
+    #  - "3306:3306"
       
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
